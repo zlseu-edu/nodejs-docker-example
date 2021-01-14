@@ -1,4 +1,5 @@
-FROM node:latest
+ARG BASE_IMAGE=node:latest
+FROM $BASE_IMAGE
 
 RUN mkdir /app
 WORKDIR /app
